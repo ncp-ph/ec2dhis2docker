@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: dhis2/dhis2-web:trunk-tomcat7-jre8-20191006
+    image: dhis2/dhis2-web:trunk-tomcat7-jre8-latest
     restart: always
     ports:
       - "8080:8080"
