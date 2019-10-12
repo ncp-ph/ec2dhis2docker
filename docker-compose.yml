@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     image: dhis2/dhis2-web:trunk-tomcat7-jre8-latest
+    container_name: dhis2
     restart: always
     ports:
       - "8080:8080"
@@ -12,6 +13,7 @@ services:
       - "db"
   db:
     image: mdillon/postgis
+    container_name: postgres
     command: "postgres -c max_locks_per_transaction=100"
     restart: always
     ports:
@@ -22,3 +24,16 @@ services:
       POSTGRES_DB: dhis2
       POSTGRES_USER: dhis
       POSTGRES_PASSWORD: dhis
+  proxy:
+    image: nginx:latest
+    container_name: nginx
+    restart: always
+    volumes:
+      - ./includes/nginx_default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    depends_on:
+      - "web"
