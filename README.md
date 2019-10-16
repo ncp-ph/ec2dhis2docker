@@ -9,6 +9,6 @@ AWS EC2 t2.micro instance on Ubuntu18.04 64bit and DHIS2+PostgreSQL
 5. Then lastly: sudo apt install docker docker-compose	 
 6. Pull this repository upon logging in on SSH (Default is /home/ubuntu/) and execute: sudo docker-compose up -d
 7. Wait until containers are up (takes < 5 minutes) 
-8. Go to http://<public_ip> or http://<endpoint> and login with these credentials: admin/district
+8. Go to http://<public_ip> and login with these credentials: admin/district
 
 Note: any changes on the site is saved on 'datadb' folder which is on the same directory as this repository
