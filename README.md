@@ -1,11 +1,11 @@
 # ec2dhis2docker
 ## Nutrition Center of the Philippines (jsolon@ncp.org.ph)
 #### AWS EC2 t2.micro instance with Ubuntu18.04 64bit ###
-Maintained by: Dexter N. (dhec.naag@gmail.com)
-Disclaimer This is for testing purposes only, the Maintainer, NCP (the owner) or its affiliations is free from liabilities of any kind.
+Maintained by: Dexter N. (dhec.naag@gmail.com)<br>
+Disclaimer: This is for testing purposes only, the Maintainer, NCP (the owner) or its affiliations is free from liabilities of any kind.
 
-This does not cover AWS signup, EC2 launches and other configurations. A basic knowledge of Linux commands and Docker might be required though the procedure below is straighforward.
-It was tested and guaranteed to work on a Virtualbox instance with Ubuntu 18.04 and 19.04 for personal use (OS installation is not covered). Feel free to import your own sample data and configure it to your needs.
+This does not cover AWS signup, EC2 launches and other configurations. A basic knowledge of Linux commands and Docker might be required though the procedure below is straighforward.<br>
+It was tested and guaranteed to work on a Virtualbox instance with Ubuntu 18.04 and 19.04 for personal use (OS installation is not covered). Feel free to import your own sample data and configure it to your needs.<br>
 NCP's aim is to run DHIS2 on EC2 free-tier instance as well as on other OS platforms the fastest way and with basic technical knowledge.
 
 Procedures:<br>
