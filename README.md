@@ -4,14 +4,13 @@ Tested on: Virtualbox, AWS Linux and CentOS with Docker
 
 1. Launch a t2.micro (or better) EC2 with Ubuntu 18.04 OS 64bit
 2. Login to the instance using your SSH Client
-3. Then: sudo apt update
-4. Then: sudo apt upgrade -y
-5. Then: sudo apt install docker docker-compose -y 
-6. Clone this repository: sudo git clone https://github.com/dhec/ec2dhis2docker.git
-7. Go to the directory: cd ec2dhis2docker
-8. Then execute: sudo docker-compose up -d ( sudo docker-compose -f dhis2-core.yml for dhis2-core version )
-9. Wait until containers are up (takes < 5 minutes for dhis-web and ~10 minues for dhis-core) 
-10. Go to http://<public_ip_address> and login with these credentials: admin/district
+3. Then: sudo apt update && sudo apt upgrade -y
+4. Then: sudo apt install docker docker-compose -y 
+5. Clone this repository: sudo git clone https://github.com/dhec/ec2dhis2docker.git
+6. Go to the directory: cd ec2dhis2docker
+7. Then execute: sudo docker-compose up -d ( sudo docker-compose -f dhis2-core.yml for dhis2-core version )
+8. Wait until containers are up (takes < 5 minutes for dhis-web and ~10 minues for dhis-core) 
+9. Go to http://<public_ip_address> and login with these credentials: admin/district
 
 Important Notes:<br> 
 a. any changes on the site is saved on 'datadb' folder which is on the same directory as this repository<br>
