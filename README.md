@@ -17,7 +17,7 @@ Procedures:<br>
 5. Clone this repository: sudo git clone https://github.com/ncp-ph/ec2dhis2docker.git
 6. Go to the directory: cd ec2dhis2docker
 7. Then execute: sudo docker-compose up -d (for dhis-core version: sudo docker-compose -f dhis2-core.yml up -d)
-8. Wait until containers are up (takes < 5 minutes for dhis-web and >10 minutes for dhis-core on t2.micro, if you want to see what's going on the background you can use the following command: docker logs -f dhis2) 
+8. Wait until containers are up (takes < 5 minutes for dhis-web and >10 minutes for dhis-core on a t2.micro, if you want to see what's going on the background, you can use the following command: docker logs -f dhis2) 
 9. Go to http://ec2-endpoint_or_ip_address_here and login with these credentials: admin/district
 
 Important Notes:<br> 
