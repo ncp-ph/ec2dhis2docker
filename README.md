@@ -16,12 +16,12 @@ NCP's aim is to run DHIS2 on EC2 free-tier instance as well as on other OS platf
 5. Clone this repository: `sudo git clone https://github.com/ncp-ph/ec2dhis2docker.git`
 6. Go to the directory: `cd ec2dhis2docker`
 7. Then execute: `sudo docker-compose up -d` (for dhis-core version: `sudo docker-compose -f dhis2-core.yml up -d`)
-8. Wait until containers are up (takes < 5 minutes for dhis-web and >10 minutes for dhis-core on a t2.micro, if you want to see what's going on the background, you can use the following command: `docker logs -f dhis2`) 
+8. Wait until containers are up (takes less than 5 minutes for dhis-web and more than 30 minutes for dhis-core on a t2.micro, if you want to see what's going on the background, you can use the following command: `docker logs -f dhis2`) 
 9. Go to http://ec2-endpoint_or_ip_address_here and login with these credentials: admin/district
 
 **Important Notes:**<br> 
-a. Any changes on the site is saved on 'datadb' folder which is on the same directory as this repository<br>
+a. Any changes on the site is saved on **'datadb'** folder which is on the same directory as this repository<br>
 b. By default, the dhis2-web or lightweight version is configured on the docker-compose.yml file<br>
-c. If you want to use the core version make sure that your EC2 instance is at least t2.small or higher<br>
-c. This was also tested to run on AWS Linux, CentOS but will require more configurations that is not written here<br>
-d. This will not work nor tested on any WindowsOS and MacOS
+c. If you want to use the core version make sure that your EC2 instance is **at least t2.small or higher for better performance**<br>
+c. This was also tested to run on AWS Linux, CentOS but it will require more configurations that is not written here<br>
+d. This was not tested nor work on any WindowsOS and MacOS yet(work-in-progress)
