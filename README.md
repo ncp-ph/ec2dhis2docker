@@ -2,10 +2,11 @@
 AWS EC2 t2.micro instance with Ubuntu18.04 64bit<br> 
 Tested on: EC2 instances and Virtualbox<br>
 Maintained by: Dexter N. (dhec.naag@gmail.com)<br>
-For: Nutrition Center of the Philippines (jsolon@ncp.org.ph)
+For: Nutrition Center of the Philippines (jsolon@ncp.org.ph)<br>
+Disclaimer: This is for testing purposes only, the Maitainer, NCP(the owner) or its affiliations is free from liabilities of any kind. 
 
 Procedures:<br>
-1. Launch a t2.micro (or better) EC2 with *Ubuntu 18.04 OS 64bit*
+1. Launch a t2.micro (or better) EC2 with Ubuntu 18.04 OS 64bit
 2. Login to the instance using your SSH Client
 3. Then: sudo apt update && sudo apt upgrade -y
 4. Then: sudo apt install docker docker-compose -y 
