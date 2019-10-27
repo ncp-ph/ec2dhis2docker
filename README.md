@@ -3,7 +3,11 @@ AWS EC2 t2.micro instance with Ubuntu18.04 64bit<br>
 Tested on: EC2 instances and Virtualbox<br>
 Maintained by: Dexter N. (dhec.naag@gmail.com)<br>
 For: Nutrition Center of the Philippines (jsolon@ncp.org.ph)<br>
-Disclaimer: This is for testing purposes only, the Maintainer, NCP (the owner) or its affiliations is free from liabilities of any kind. 
+Disclaimer: This is for testing purposes only, the Maintainer, NCP (the owner) or its affiliations is free from liabilities of any kind.<br> 
+
+This does not cover AWS signup, EC2 launches and other configurations. A basic knowledge of Linux commands and Docker might be required though the procedure below is straighforward.<br> 
+It was tested and guaranteed to work on a Virtualbox instance with Ubuntu 18.04 and 19.04 for personal use (OS installation is not covered). Feel free to import your own sample data and configure it to your needs.<br>  
+NCP's aim is to run DHIS2 on EC2 free-tier instance as well as on other OS platforms the fastest way and with basic technical knowledge.<br> 
 
 Procedures:<br>
 1. Launch a t2.micro (or better) EC2 with Ubuntu 18.04 OS 64bit
@@ -13,7 +17,7 @@ Procedures:<br>
 5. Clone this repository: sudo git clone https://github.com/ncp-ph/ec2dhis2docker.git
 6. Go to the directory: cd ec2dhis2docker
 7. Then execute: sudo docker-compose up -d (for dhis-core version: sudo docker-compose -f dhis2-core.yml up -d)
-8. Wait until containers are up (takes < 5 minutes for dhis-web and >10 minutes for dhis-core) 
+8. Wait until containers are up (takes < 5 minutes for dhis-web and >10 minutes for dhis-core on t2.micro, if you want to see what's going on the background you can use the following command: docker logs -f dhis2) 
 9. Go to http://ec2-endpoint_or_ip_address_here and login with these credentials: admin/district
 
 Important Notes:<br> 
