@@ -1,13 +1,13 @@
 version: '3'
 services:
   web:
-    image: dhis2/dhis2-web:trunk-tomcat7-jre8-latest
+    image: dhis2/core:2.33.0-tomcat-8.5.34-jre8-alpine
     container_name: dhis2
     restart: always
     ports:
       - "8080:8080"
     volumes:
-      - ./includes/dhis.conf:/opt/dhis2/config/dhis.conf
+      - ./includes/dhis.conf:/DHIS2_home/dhis.conf
       - ./includes/server.xml:/usr/local/tomcat/conf/server.xml
     depends_on:
       - "db"
