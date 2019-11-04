@@ -23,6 +23,6 @@ NCP's aim is to run DHIS2 on EC2 instance as well as on other OS platforms the f
 **Important Notes:**<br> 
 a. Any changes on the site is saved on **'datadb'** folder which is on the same directory as this repository<br>
 b. By default, the dhis2-core is configured on the docker-compose.yml file<br>
-c. If you want to use the web version (now unsupported, according to DHIS2 team) you can use a free-tier t2.micro EC2 instance.
-c. This was also tested to run on AWS Linux, CentOS but it will require more configurations that is not written here<br>
-d. This was not tested nor work on any WindowsOS and MacOS yet(work-in-progress)
+c. If you want to use the web version (now unsupported, according to DHIS2 team) you can use a free-tier t2.micro EC2 instance.<br>
+d. This was also tested to run on AWS Linux, CentOS but it will require more configurations that is not written here<br>
+e. This was not tested nor work on any WindowsOS and MacOS yet(work-in-progress)
