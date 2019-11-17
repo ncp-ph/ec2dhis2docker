@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     image: dhis2/core-dev:2.33-tomcat-8.5.34-jre8-alpine
-    container_name: dhis2
+    container_name: dhis2-dev
     restart: always
     ports:
       - "8080:8080"
