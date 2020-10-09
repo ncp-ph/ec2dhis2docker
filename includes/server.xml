@@ -26,6 +26,7 @@ Disclaimer: This is for testing purposes only, the Maitainer, NCP(the owner) or 
   <Service name="Catalina">
 
   <Connector port="8080"
+             relaxedQueryChars="[,]"
              protocol="HTTP/1.1"
              connectionTimeout="20000"
              redirectPort="8443" />
