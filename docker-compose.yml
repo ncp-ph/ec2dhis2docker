@@ -6,7 +6,8 @@ services:
     # image: dhis2/core:2.34.1-tomcat-8.5.34-jre8-alpine
     # image: dhis2/core:2.34.3-tomcat-8.5.34-jre8-alpine
     # image: dhis2/core:2.35.1-tomcat-8.5.34-jre8-alpine
-    image: dhis2/core:2.37.0-tomcat-8.5.34-jre8-alpine
+    # image: dhis2/core:2.37.0-tomcat-8.5.34-jre8-alpine
+    image: dhis2/core:2.37.7.1-tomcat-8.5.34-jre8-alpine
     container_name: dhis2
     restart: always
     ports:
